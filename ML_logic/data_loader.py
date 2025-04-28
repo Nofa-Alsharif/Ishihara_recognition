@@ -1,6 +1,6 @@
 from pathlib import Path
 import tensorflow as tf
-from config import IMAGE_SIZE
+from ML_logic.config import IMAGE_SIZE
 
 
 def load_datasets(data_path):
@@ -17,8 +17,19 @@ def load_datasets(data_path):
 
     return data_dir
 
+def load_image_paths(data_path):
+    """
+    Load all image file paths under the selected vision type.
+    """
+
+    data_dir = Path(data_path)
+    return [str(p) for p in Path(data_dir).rglob("*.png")]
+
 
 def data_split(data_dir, image_size=IMAGE_SIZE, seed=123):
+    """
+    Split the data into train set and valid set
+    """
     train_ds = tf.keras.utils.image_dataset_from_directory(
         directory=data_dir,
         subset="training",
