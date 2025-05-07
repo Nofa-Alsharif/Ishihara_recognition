@@ -5,3 +5,5 @@ model/*.keras
 model/*.keras
 __pycache__/
 *.pyc
+model/*.keras
+raw_data/*.keras
