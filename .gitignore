@@ -1,5 +1,8 @@
-raw_data/
+#raw_data/
+model/
 Red_CNN_FinalModel83.keras
 model/*.keras
 model/*.keras
 model/*.keras
+__pycache__/
+*.pyc
