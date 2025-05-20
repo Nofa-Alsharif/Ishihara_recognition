@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 model/*.keras
 raw_data/*.keras
+raw_data/Red_CNN_FinalModel83.keras.bkp
