@@ -1,1 +1,5 @@
-Ishihara card recognition project
+# Ishihara card recognition project "Whisper In Hue"🌈 :
+Whisper in Hue is a deep learning-based project designed to detect numbers within Ishihara color vision test cards for individuals with different types of color blindness, including red-blind, green-blind, and blue-blind. The project features a Streamlit interface that allows users to guess the number displayed on any Ishihara card and tracks their progress throughout the interaction. The system informs users whether their answers are correct or not and provides the model’s predicted number as feedback. After a series of attempts, the interface presents the user with the total number of correct answers they achieved, making it an interactive and educational tool for testing and improving color vision recognition.
+
+# Data Simulation
+We began with a single dataset of Ishihara images under normal vision, and used the ColorSpacious library in Python to simulate three additional datasets that mimic the perception of color-blind users resulting in blue-blind, green-blind, and red-blind datasets.
